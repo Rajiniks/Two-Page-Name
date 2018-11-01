@@ -1,0 +1,10 @@
+<label>
+  Name:
+  <input  [(ngModel)]="name" type="text" >
+</label> &nbsp; 
+<label>
+    title:
+    <input  [(ngModel)]="title" type="text" >
+  </label> &nbsp;
+<h1>{{name}}</h1>
+<button [routerLink]="['/next', name]" style="width:20px; height:20px; background-color:aqua;"></button>
